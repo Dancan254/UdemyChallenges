@@ -5,7 +5,7 @@ public class StudentMain {
         for (int i = 1; i <= 5 ; i++) {
                 IanStudent one = new IanStudent(
                         switch(i){
-                        case 1 -> "Peris";
+                         case 1 -> "Peris";
                         case 2 -> "Ian";
                         case 3 -> "Ann";
                         case 4 -> "Duncan";
@@ -17,6 +17,8 @@ public class StudentMain {
                         "Ian's School of Coding");
                 System.out.println(one);
         }
+
+        System.out.println();
         System.exit(0);
     }
 }
