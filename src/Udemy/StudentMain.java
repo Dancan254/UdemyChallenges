@@ -17,8 +17,7 @@ public class StudentMain {
                         "Ian's School of Coding");
                 System.out.println(one);
         }
-
-        System.out.println();
+        //System.out.println();
         System.exit(0);
     }
 }
