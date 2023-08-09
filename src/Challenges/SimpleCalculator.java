@@ -1,4 +1,4 @@
-package Udemy;
+package Challenges;
 
 public class SimpleCalculator {
     private double firstNumber;

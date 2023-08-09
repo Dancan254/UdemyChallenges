@@ -1,4 +1,4 @@
-package Udemy;
+package Challenges;
 
 public class SimpleCalculatorMain {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Udemy;
+package Strings;
 
 public class StringFormatting {
     public static void main(String[] args) {

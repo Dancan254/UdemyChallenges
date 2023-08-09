@@ -1,4 +1,6 @@
-package Udemy;
+package Encapsulation;
+
+import Challenges.IanStudent;
 
 public class StudentMain {
     public static void main(String[] args) {

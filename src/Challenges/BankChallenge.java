@@ -1,4 +1,4 @@
-package Udemy;
+package Challenges;
 
 /**
  * bankAccount: a/c number, a/c balance, customer name,

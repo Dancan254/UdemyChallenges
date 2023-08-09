@@ -1,4 +1,4 @@
-package Udemy;
+package Challenges;
 /**
  * Write a class with the name ComplexNumber.
  * The class needs two fields (instance variables) with name real and imaginary of type double.

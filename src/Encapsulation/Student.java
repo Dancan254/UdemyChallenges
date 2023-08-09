@@ -1,4 +1,4 @@
-package Udemy;
+package Encapsulation;
 
 public class Student {
     private String name;

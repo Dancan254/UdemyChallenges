@@ -1,4 +1,4 @@
-package Udemy;
+package Strings;
 
 /**those that do not change the underlying meaning:
  * indent, strip, stripLeading, stripLeading, trim, toLowerCase, toUpperCase

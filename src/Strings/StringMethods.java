@@ -1,4 +1,4 @@
-package Udemy;
+package Strings;
 
 /**
  * String Inspection:
