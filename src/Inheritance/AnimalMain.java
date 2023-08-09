@@ -1,4 +1,4 @@
-package Udemy;
+package Inheritance;
 
 public class AnimalMain {
     public static void main(String[] args) {

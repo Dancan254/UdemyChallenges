@@ -1,4 +1,4 @@
-package Udemy;
+package Inheritance;
 
 public class Employee extends Worker{
     private long employeeID;

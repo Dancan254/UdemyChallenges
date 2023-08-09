@@ -1,4 +1,4 @@
-package Udemy;
+package Inheritance;
 
 public class Rectangle {
     private double width;

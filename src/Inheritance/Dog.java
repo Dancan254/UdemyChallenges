@@ -1,4 +1,4 @@
-package Udemy;
+package Inheritance;
 
 public class Dog extends Animal{
     private String earShape;

@@ -1,6 +1,6 @@
 package Udemy;
 
-public class Main {
+public class BankMain {
 
 
     public static void main(String[] args) {

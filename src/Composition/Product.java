@@ -1,4 +1,4 @@
-package Udemy;
+package Composition;
 
 public class Product {
     private String model;

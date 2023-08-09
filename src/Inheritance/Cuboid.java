@@ -1,6 +1,8 @@
-package Udemy;
+package Inheritance;
 
-public class Cuboid extends Rectangle{
+import Inheritance.Rectangle;
+
+public class Cuboid extends Rectangle {
     private double height;
 
     public Cuboid(double width, double length, double height) {

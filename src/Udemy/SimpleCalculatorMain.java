@@ -1,6 +1,6 @@
 package Udemy;
 
-public class CalculatorMain {
+public class SimpleCalculatorMain {
     public static void main(String[] args) {
         SimpleCalculator calculator = new SimpleCalculator();
         calculator.setFirstNumber(40);

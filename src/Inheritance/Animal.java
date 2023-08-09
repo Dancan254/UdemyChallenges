@@ -1,4 +1,4 @@
-package Udemy;
+package Inheritance;
 //implements inheritance
 public class Animal {
     protected String type;

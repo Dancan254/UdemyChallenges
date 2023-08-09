@@ -1,4 +1,4 @@
-package Udemy;
+package Inheritance;
 
 public class Fish extends Animal {
     private int gills;

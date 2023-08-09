@@ -1,4 +1,4 @@
-package Udemy;
+package Encapsulation;
 
 import java.util.Locale;
 

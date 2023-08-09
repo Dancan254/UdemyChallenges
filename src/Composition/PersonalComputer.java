@@ -1,11 +1,14 @@
-package Udemy;
+package Composition;
 
 //import javax.management.monitor.Monitor;
 //applying composition
 //assembling the personal computer from the parts
-import javax.management.monitor.Monitor;
+import Composition.ComputerCase;
+import Composition.Moniter;
+import Composition.MotherBoard;
+import Composition.Product;
 
-public class PersonalComputer extends Product{
+public class PersonalComputer extends Product {
 
     private ComputerCase computerCase;
     private MotherBoard motherBoard;
