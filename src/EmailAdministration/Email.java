@@ -8,10 +8,10 @@ public class Email {
    private String password;
    private String department;
    private String email;
-   private int defaultPasswordLength = 10;
+   private final int defaultPasswordLength = 10;
    private int mailBoxCapacity = 500;
    private String alternateEmail;
-   private String companySuffix = "company.com";
+   private final String companySuffix ="students.dkut.ac.ke";
 
    //constructor to receive first and last name
 
@@ -25,10 +25,14 @@ public class Email {
        // System.out.println("Department: " + this.department);
         //call a method that returns a random password
         this.password = randomPassword(defaultPasswordLength);
-        System.out.println("Your password is: " + this.password);
+
 
         //method to generate email
-        email = firstName.toLowerCase() + "." + secondName.toLowerCase() + "@" + department + companySuffix;
+        Scanner sn = new Scanner(System.in);
+        System.out.print("Enter year of admission: ");
+        String year = sn.nextLine().substring(2,4);
+        email = secondName.toLowerCase() + "." + firstName.toLowerCase() + year  +"@" + companySuffix;
+        System.out.println("Your password is: " + this.password);
         //System.out.println("Your email is: " + email);
     }
 
@@ -37,6 +41,7 @@ public class Email {
         System.out.println("New worker " + firstName + "\nEnter the department code: \n1 Mechatronics\n2 Mechanical\n3 Chemical");
         Scanner sn = new Scanner(System.in);
         int departmentChoice = sn.nextInt();
+        //can use switch case
         if(departmentChoice == 1){
             return "Mechatronics";
         }
@@ -51,10 +56,10 @@ public class Email {
 
     //Generate random password
     private String randomPassword(int length){
-        String passWordSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ@!&%*()~!?";
+        String passWordSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ@!&%*()~!?1234567890abcdefghijklmnopqrstuvwxyz";
         char[] password = new char[length];
         for (int i = 0; i < length; i++) {
-            int rand = (int) (Math.random() * passWordSet.length());
+            int rand = (int) (Math.random()*passWordSet.length());
             password[i] = passWordSet.charAt(rand);
         }
         return new String(password);
