@@ -1,9 +1,6 @@
 package Collections.ArrayLists;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class MoreLists {
     public static void main(String[] args) {
@@ -83,6 +80,16 @@ public class MoreLists {
         System.out.println("_ _ _".repeat(10));
         System.out.println(Arrays.toString(groceryArray));
 
-
+        System.out.println("Using iterator to iterate through the list");
+        Iterator<String> itr = groceries.iterator();
+        while (itr.hasNext()){
+            System.out.print(itr.next() + " ");
+        }
+        System.out.println();
+        //using for loop
+        System.out.println("using For loop to iterate through the list");
+        for (String groceryList : groceries){
+            System.out.print(groceryList + " ");
+        }
     }
 }
