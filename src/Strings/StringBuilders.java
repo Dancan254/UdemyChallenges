@@ -11,7 +11,7 @@ public class StringBuilders {
     public static void main(String[] args) {
 
         String helloWorld = "Hello" + "World";
-       // helloWorld.concat(" and good bye");
+       // helloWorld.concat(" and good bye"); //string cannot be mutated
 
         StringBuilder hello = new StringBuilder("Hello" + "World");
         hello.append(" and Good Bye");

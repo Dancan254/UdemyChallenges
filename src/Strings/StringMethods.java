@@ -9,7 +9,13 @@ package Strings;
 public class StringMethods {
     public static void main(String[] args) {
 
-        printInfo("Hello Ian");
+        String name = "IanDancan";
+        System.out.println("Accessing the Dan : " + name.substring(3,6));
+        System.out.println("accessing the third char: " + name.charAt(2));
+        System.out.println("checking the length: " + name.length());
+        System.out.println();
+
+        printInfo("HelloIan");
         printInfo("");//the string is empty
         printInfo("\t \n");//string is blank
 
@@ -54,7 +60,6 @@ public class StringMethods {
     public static void printInfo(String string){
         int length = string.length();
         System.out.printf("Length = %d %n", length);
-
         if (string.isEmpty()){
             System.out.println("String is Empty");
             return;
@@ -66,7 +71,6 @@ public class StringMethods {
 
         System.out.printf("First char = %c %n", string.charAt(0));
         System.out.printf("Last char = %c %n", string.charAt(length - 1));
-       // System.out.println(string.substring(5));
 
     }
 }
