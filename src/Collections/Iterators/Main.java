@@ -21,11 +21,14 @@ public class Main {
         //var itr = names.iterator();
         //choice of loop to use depends on the user preference
         while (itr.hasNext()){
-            System.out.print(itr.next() + " ");
+            //System.out.print(itr.next() + " ");
+            if (itr.next().equals("Mongs")){
+                itr.remove();
+            }
         }
 
-        if (itr.next().equals("Mongs")){
-            itr.remove();
-        }
+
+
+        System.out.print(names + " ");
     }
 }
