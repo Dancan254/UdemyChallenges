@@ -13,7 +13,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList<String> names = new ArrayList<>(List.of("Ian", "Kamashu","dancan", "Mongs", "Mongs"));
+        ArrayList<String> names = new ArrayList<>(List.of("Ian", "Kamashu","dancan", "Mongs", "Peris", "Muhtoni", "Kits"));
 
 
         //using an iterator to travesrse through the list
@@ -26,9 +26,26 @@ public class Main {
                 itr.remove();
             }
         }
-
-
-
         System.out.print(names + " ");
+
+        //adding elements
+        var iterator = names.listIterator();
+        while (iterator.hasNext()){
+            //if condition to show where the element is to be added
+            if (iterator.next().equals("Ian")){
+                iterator.add("dancan");
+            }
+        }
+        System.out.println();
+        System.out.print(names + " ");
+
+        //iterating backwards through the list
+        while (iterator.hasPrevious()){
+            System.out.println(iterator.previous() + " ");
+        }
+
+        //accessing elements
+        var iterate = names.listIterator(4);
+        System.out.println(iterate.previous());
     }
 }
