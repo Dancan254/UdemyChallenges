@@ -1,4 +1,4 @@
-package Challenges;
+package Challenges.Bank;
 
 /**
  * bankAccount: a/c number, a/c balance, customer name,

@@ -1,4 +1,6 @@
-package Challenges;
+package Challenges.Bank;
+
+import Challenges.Bank.BankChallenge;
 
 public class BankMain {
 
