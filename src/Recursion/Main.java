@@ -14,7 +14,7 @@ public class Main {
         System.out.println("Enter number: ");
         int num = sn.nextInt();
         System.out.println("Factorial is: " + factorial(num));
-
+        counter(4);
     }
 
     //method for summation
@@ -36,6 +36,17 @@ public class Main {
         }
         else{
             return n * factorial(n - 1);
+        }
+    }
+
+    ///timer
+    public static void counter(int n){
+        if (n <= 0){
+            return ;
+        }
+        else{
+            System.out.println(n);
+            counter(n - 1);
         }
     }
 }
