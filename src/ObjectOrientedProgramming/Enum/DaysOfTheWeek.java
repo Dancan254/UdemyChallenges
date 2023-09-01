@@ -11,7 +11,6 @@ public enum DaysOfTheWeek {
         for (DaysOfTheWeek dd : DaysOfTheWeek.values()){
             System.out.println(dd + " ");
         }
-
         System.out.println(DaysOfTheWeek.FRIDAY + " is the " + DaysOfTheWeek.FRIDAY.ordinal() + "th day of the week");
     }
 }
