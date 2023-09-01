@@ -13,8 +13,7 @@ enum EnumAbstract {
         public double apply(double x, double y){
             return x - y;
         }
-
-        },
+    },
 
     MULTIPLY {
         @Override
@@ -31,8 +30,10 @@ enum EnumAbstract {
                     throw new ArithmeticException("Cannot divide by zero.");
                 }
             }
-    };
+        };
 
+
+//abstract method
     abstract  double apply(double x, double y);
 
     public static void main(String[] args) {
