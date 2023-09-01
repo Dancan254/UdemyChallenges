@@ -1,4 +1,4 @@
-package Interface;
+package ObjectOrientedProgramming.Interface;
 
 public interface Media {
     void start();

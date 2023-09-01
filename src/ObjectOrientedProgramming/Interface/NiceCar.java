@@ -1,4 +1,4 @@
-package Interface;
+package ObjectOrientedProgramming.Interface;
 
 public class NiceCar implements Engine, Brake{
     //it is going to have an internal engine of its own

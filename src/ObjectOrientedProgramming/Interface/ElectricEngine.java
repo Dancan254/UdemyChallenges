@@ -1,4 +1,4 @@
-package Interface;
+package ObjectOrientedProgramming.Interface;
 
 public class ElectricEngine implements Engine{
     @Override

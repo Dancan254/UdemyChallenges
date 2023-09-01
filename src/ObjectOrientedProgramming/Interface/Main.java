@@ -1,4 +1,4 @@
-package Interface;
+package ObjectOrientedProgramming.Interface;
 
 public class Main {
     public static void main(String[] args) {

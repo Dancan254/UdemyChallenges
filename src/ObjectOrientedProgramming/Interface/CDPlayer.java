@@ -1,4 +1,4 @@
-package Interface;
+package ObjectOrientedProgramming.Interface;
 
 public class CDPlayer implements Media{
     @Override

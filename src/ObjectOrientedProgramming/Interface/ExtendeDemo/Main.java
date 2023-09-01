@@ -1,4 +1,4 @@
-package Interface.ExtendeDemo;
+package ObjectOrientedProgramming.Interface.ExtendeDemo;
 
 public class Main implements B{
 
