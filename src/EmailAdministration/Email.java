@@ -18,12 +18,8 @@ public class Email {
     public Email(String firstName, String secondName) {
         this.firstName = firstName;
         this.secondName = secondName;
-       // System.out.println("Email created " + this.firstName + " " + this.secondName);
-
         //call a method for the department
         this.department = department();
-       // System.out.println("Department: " + this.department);
-        //call a method that returns a random password
         this.password = randomPassword(defaultPasswordLength);
 
 
