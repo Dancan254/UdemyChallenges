@@ -1,4 +1,4 @@
-package AbstractClasses;
+package ObjectOrientedProgramming.Abstraction.Family;
 
 public abstract class Parent {
     int age;

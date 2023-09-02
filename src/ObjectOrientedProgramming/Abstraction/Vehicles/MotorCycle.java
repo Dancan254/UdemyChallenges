@@ -1,6 +1,6 @@
-package AbstractClasses;
+package ObjectOrientedProgramming.Abstraction.Vehicles;
 
-public class MotorCycle extends Vehicle{
+public class MotorCycle extends Vehicle {
     private boolean hasSideCar;
 
     public MotorCycle(String model, boolean hasSideCar) {

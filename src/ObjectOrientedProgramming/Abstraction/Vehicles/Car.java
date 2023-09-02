@@ -1,6 +1,6 @@
-package AbstractClasses;
+package ObjectOrientedProgramming.Abstraction.Vehicles;
 
-public class Car extends Vehicle{
+public class Car extends Vehicle {
     private int numDoors;
 
     public Car(String model, int numDoors) {

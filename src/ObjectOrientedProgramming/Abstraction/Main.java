@@ -1,11 +1,10 @@
-package AbstractClasses;
+package ObjectOrientedProgramming.Abstraction;
+
+import ObjectOrientedProgramming.Abstraction.Vehicles.Car;
+import ObjectOrientedProgramming.Abstraction.Vehicles.MotorCycle;
 
 public class Main {
     public static void main(String[] args) {
-        Son son = new Son(25);
-        son.career();
-        son.partner();
-
         MotorCycle motor = new MotorCycle("Suzuki", true);
         motor.showInfo();
 

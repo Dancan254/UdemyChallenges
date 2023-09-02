@@ -1,6 +1,8 @@
-package AbstractClasses;
+package ObjectOrientedProgramming.Abstraction.Family;
 
-public class Son extends Parent{
+import ObjectOrientedProgramming.Abstraction.Family.Parent;
+
+public class Son extends Parent {
     public Son(int age) {
         super(age);
     }

@@ -1,4 +1,4 @@
-package AbstractClasses;
+package ObjectOrientedProgramming.Abstraction.Vehicles;
 
 public abstract class Vehicle {
     private String model;
