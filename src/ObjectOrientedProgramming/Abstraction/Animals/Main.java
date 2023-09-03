@@ -11,8 +11,7 @@ public class Main {
         animals.add(new Dog("Motina", "Big", 100));
         animals.add(new Dog("Boscow", "Big", 150));
         animals.add(new Dog("RANDY", "Big", 120));
-
-
+        animals.add(new Fish("goldfish", "small", 34));
         for (Animal animal : animals){
             doAnimalStuff(animal);
         }
