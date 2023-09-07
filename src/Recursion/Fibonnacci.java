@@ -35,7 +35,7 @@ public class Fibonnacci {
         if (position == 0){
             return 0;
         }
-        if (position == 1 || position == 2) {
+        if (position <= 2) {
             return 1;
         }
 
