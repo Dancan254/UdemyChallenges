@@ -1,9 +1,14 @@
 package Recursion;
 
-public class Fibonnacci {
-    public static void main(String[] args) {
+import java.util.HashMap;
+import java.util.Map;
 
-        System.out.println(fibo(5));
+public class Fibonnacci {
+//implementing memorization however leads to a lot of time consumption
+    private static Map<Integer, Integer> cache = new HashMap<>();
+    public static void main(String[] args) {
+//0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55
+        System.out.println(fibo(5));//5
 
         System.out.println(recursiveFIbo(8));//21
     }
@@ -29,11 +34,17 @@ public class Fibonnacci {
     private static int recursiveFIbo(int position){
         if (position == 0){
             return 0;
-        } else if (position == 1 || position == 2) {
+        }
+        if (position == 1 || position == 2) {
             return 1;
         }
-        else {
-            return recursiveFIbo(position - 1) + recursiveFIbo(position - 2);
+
+        if (cache.containsKey(position)){
+            return cache.get(position);
         }
+
+        int result = recursiveFIbo(position - 1) + recursiveFIbo(position - 2);
+        cache.put(position, result);
+        return result;
     }
 }
