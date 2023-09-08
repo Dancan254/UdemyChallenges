@@ -33,7 +33,7 @@ public class RemovingDuplicateChars {
         System.out.println(builder);
     }
 
-    //using TreeSet
+    //using TreeSet, this however does not maintain the order of the words
     public static void removeDuplicates(String string){
 
         Set<Character> unique = new TreeSet<>();
