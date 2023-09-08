@@ -1,8 +1,6 @@
 package Strings;
 
-import java.util.Scanner;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class RemovingDuplicateChars {
     public static void main(String[] args) {
@@ -14,6 +12,10 @@ public class RemovingDuplicateChars {
 
         System.out.println("Using sets");
         removeDuplicates(word);
+
+        System.out.println();
+        System.out.println("Using lists: ");
+        removeDupUsingList(word);
     }
 
     //using String builder
@@ -47,5 +49,23 @@ public class RemovingDuplicateChars {
         }
 
         System.out.print(str);
+    }
+
+    //using lists
+    public static void removeDupUsingList(String string){
+
+        List<Character> listChar = new ArrayList<>();
+        for (char ch : string.toCharArray()){
+            if (listChar.contains(ch)){
+                continue;
+            }
+            listChar.add(ch);
+        }
+
+        StringBuilder builder = new StringBuilder();
+        for (char ch : listChar){
+            builder.append(ch);
+        }
+        System.out.println(builder);
     }
 }
