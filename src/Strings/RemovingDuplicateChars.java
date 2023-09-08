@@ -1,12 +1,23 @@
 package Strings;
 
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeSet;
+
 public class RemovingDuplicateChars {
     public static void main(String[] args) {
-        checkDuplicate("helllo");
+        Scanner sn = new Scanner(System.in);
+        System.out.println("Enter desired word: ");
+        String word = sn.nextLine();
+
+        removeDuplicate(word);
+
+        System.out.println("Using sets");
+        removeDuplicates(word);
     }
 
-    //using String bUilder
-    public static void checkDuplicate(String string){
+    //using String builder
+    public static void removeDuplicate(String string){
         //hello
         StringBuilder builder = new StringBuilder();
 
@@ -18,5 +29,23 @@ public class RemovingDuplicateChars {
             }
         }
         System.out.println(builder);
+    }
+
+    //using TreeSet
+    public static void removeDuplicates(String string){
+
+        Set<Character> unique = new TreeSet<>();
+        //convert the string to
+        for (char ch : string.toCharArray()){
+            unique.add(ch);
+        }
+
+        //convert the collection back to String
+        StringBuilder str = new StringBuilder();
+        for (char ch : unique){
+            str.append(ch);
+        }
+
+        System.out.print(str);
     }
 }
