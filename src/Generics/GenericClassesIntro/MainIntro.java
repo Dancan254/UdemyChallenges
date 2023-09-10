@@ -1,4 +1,4 @@
-package Generics.Introduction;
+package Generics.GenericClassesIntro;
 
 import java.util.Scanner;
 
@@ -36,5 +36,25 @@ public class MainIntro {
         stringList.addElement("Duncan");
         stringList.removeElement("Ian");
         System.out.println(stringList.toString());
+
+        System.out.println("Enter index you wish to see its value: ");
+        int indexString = sn.nextInt();
+        try {
+            System.out.println(stringList.getIndex(indexString));
+        }catch (IndexOutOfBoundsException e){
+            System.out.println("Index not present");
+            System.out.println(e.getMessage());
+        }
+
+        //with number restriction, the same can be applied to Integers, Double, Float
+        GenericRestrictions<Long> longNum = new GenericRestrictions<>();
+        longNum.addElement(5L);
+        longNum.addElement(7L);
+        longNum.addElement(8L);
+        longNum.addElement(8L);
+
+        System.out.println(longNum.get(3));
+        System.out.println(longNum.toString());
+
     }
 }

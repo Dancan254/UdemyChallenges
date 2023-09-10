@@ -1,4 +1,4 @@
-package Generics.Introduction;
+package Generics.GenericClassesIntro;
 
 public class GenericClasses {
 
