@@ -24,6 +24,10 @@ public class CustomList<T> {
             System.out.println(element + " not found");
         }
     }
+    //method to get index
+    public T getIndex(int index){
+        return myList.get(index);
+    }
     //print out elements
     @Override
     public String toString() {
