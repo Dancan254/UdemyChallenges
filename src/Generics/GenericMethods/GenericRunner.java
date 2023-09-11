@@ -23,7 +23,9 @@ public class GenericRunner {
         System.out.println(doSomething("Ian"));//no need to specify the data type
         System.out.println(doSomething(9));
 
-        ArrayList<String> list = doSomething(new ArrayList<>(List.of("Ann", "Muthoni", "Ann")));
+        ArrayList<String> list = doSomething(new ArrayList<>(List.of("Ann", "Duncan", "Ann")));
+        list.add("Ian");
+        list.add("Joseph");
         duplicates(list);
         System.out.println(list);
     }
