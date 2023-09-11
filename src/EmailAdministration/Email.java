@@ -21,15 +21,19 @@ public class Email {
         //call a method for the department
         this.department = department();
         this.password = randomPassword(defaultPasswordLength);
-
+        this.email = emailGen();
 
         //method to generate email
+
+        //System.out.println("Your email is: " + email);
+    }
+    private String emailGen(){
         Scanner sn = new Scanner(System.in);
         System.out.print("Enter year of admission: ");
         String year = sn.nextLine().substring(2,4);
         email = secondName.toLowerCase() + "." + firstName.toLowerCase() + year  +"@" + companySuffix;
         System.out.println("Your password is: " + this.password);
-        //System.out.println("Your email is: " + email);
+        return email;
     }
 
     //ask for department
