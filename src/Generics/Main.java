@@ -38,13 +38,13 @@ public class Main {
         System.out.println("Using generic class team");
         //using generic class Team
         Team<BaseBallPlayer> baseBallPlayerTeam = new Team<>("DEKut");
-        BaseBallPlayer Duncan = new BaseBallPlayer("Duncan", "Winger");
+        var Duncan = new BaseBallPlayer("Duncan", "Winger");
         baseBallPlayerTeam.addTeamMember(Duncan);
         baseBallPlayerTeam.listTeamMembers();
 
         //football player
         Team<FootBallPlayer> footBallPlayerTeam = new Team<>("Kimathi");
-        FootBallPlayer Koshy = new FootBallPlayer("Stewart", "RightBack");
+        var Koshy = new FootBallPlayer("Stewart", "RightBack");
         footBallPlayerTeam.addTeamMember(Koshy);
         footBallPlayerTeam.listTeamMembers();
     }
