@@ -1,6 +1,11 @@
 package Generics;
 
-record BaseBallPlayer(String name, String position){}
+interface Player{}
+record BaseBallPlayer(String name, String position) implements Player{}
+record FootBallPlayer(String name, String position) implements Player{}
+record HockeyTeamPlayer(String name, String position) implements Player{}
+
+
 public class Main {
 
     public static void main(String[] args) {
@@ -19,6 +24,16 @@ public class Main {
         //list
         phillies.listTeamMembers();
         astros.listTeamMembers();
+
+        SportsTeam afc = new SportsTeam("Classic xi");
+        var Jimmy = new FootBallPlayer("Jimmy", "Winger");
+        afc.addTeamMember(Jimmy);
+        afc.listTeamMembers();
+
+        SportsTeam hockey = new SportsTeam("Ranger");
+        var Mickey = new HockeyTeamPlayer("Mickey", "keeper");
+        hockey.addTeamMember(Mickey);
+        hockey.listTeamMembers();
     }
 
     public static void scoreResult(BaseBallTeam team1, int t1_Score,
