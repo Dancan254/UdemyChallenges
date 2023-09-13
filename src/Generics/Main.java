@@ -1,14 +1,22 @@
 package Generics;
 
-interface Player{}
+import ObjectOrientedProgramming.Interface.ExtendeDemo.A;
+
+interface Player{
+    String name();
+}
 record BaseBallPlayer(String name, String position) implements Player{}
 record FootBallPlayer(String name, String position) implements Player{}
 record HockeyTeamPlayer(String name, String position) implements Player{}
+record VolleyBallPlayer(String name, String position) implements Player{}
+
 
 
 public class Main {
 
     public static void main(String[] args) {
+
+        Affiliation aff = new Affiliation("city", "Nairobi", "Kenya");
         BaseBallTeam phillies = new BaseBallTeam("Philladephia");
         BaseBallTeam astros = new BaseBallTeam("Huoston Astros");
 
@@ -37,16 +45,27 @@ public class Main {
 
         System.out.println("Using generic class team");
         //using generic class Team
-        Team<BaseBallPlayer> baseBallPlayerTeam = new Team<>("DEKut");
+        Team<BaseBallPlayer, Affiliation> baseBallPlayerTeam = new Team<>("DEKut");
         var Duncan = new BaseBallPlayer("Duncan", "Winger");
         baseBallPlayerTeam.addTeamMember(Duncan);
         baseBallPlayerTeam.listTeamMembers();
 
         //football player
-        Team<FootBallPlayer> footBallPlayerTeam = new Team<>("Kimathi");
+        Team<FootBallPlayer, Affiliation> footBallPlayerTeam = new Team<>("Kimathi", aff);
         var Koshy = new FootBallPlayer("Stewart", "RightBack");
         footBallPlayerTeam.addTeamMember(Koshy);
         footBallPlayerTeam.listTeamMembers();
+
+        //volley ball player
+        Team<VolleyBallPlayer, String> volley = new Team<>("Super Strikers", "City in Nairobi, Kenya");
+        volley.addTeamMember(new VolleyBallPlayer("Peris", "Booster"));
+        volley.listTeamMembers();
+
+        var canberra = new Team<VolleyBallPlayer, Affiliation>("Canberra", aff);
+        canberra.addTeamMember(new VolleyBallPlayer("Sylus", "Spike"));
+        canberra.listTeamMembers();
+        scoreResult(canberra, 50, volley, 60);
+
     }
 
     public static void scoreResult(BaseBallTeam team1, int t1_Score,
