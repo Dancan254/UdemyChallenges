@@ -2,6 +2,7 @@ package Generics;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Random;
 
 public class Comparing {
     public static void main(String[] args) {
@@ -39,17 +40,23 @@ public class Comparing {
 
 class Student implements Comparable<Student>{
 
-   // private static int LAST_ID = 1000;
-    private static
+   private static int LAST_ID = 1000;
+   private int id;
+   protected double gpa;
+    private static Random random;
     String name;
     public Student(String name) {
         this.name = name;
+        id = LAST_ID ++;
+        gpa = random.nextDouble(1.0, 4.0);
     }
 
     @Override
     public String toString() {
-        return "student{" +
-                "name='" + name + '\'' +
+        return "Student{" +
+                "id=" + id +
+                ", gpa=" + gpa +
+                ", name='" + name + '\'' +
                 '}';
     }
 
