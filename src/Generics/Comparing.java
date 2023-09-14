@@ -25,5 +25,32 @@ public class Comparing {
         }
         Arrays.sort(fruit);
         System.out.println(Arrays.toString(fruit));
+
+        Student[] students = {new Student("Ian"), new Student("James"), new Student("Peris")};
+        Arrays.sort(students);
+        System.out.println(Arrays.toString(students));
+
+
+    }
+}
+
+class Student implements Comparable{
+    String name;
+
+    public Student(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "student{" +
+                "name='" + name + '\'' +
+                '}';
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Student other = (Student) o;
+        return name.compareTo(other.name);
     }
 }
