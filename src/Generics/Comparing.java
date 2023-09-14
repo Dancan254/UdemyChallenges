@@ -38,8 +38,10 @@ public class Comparing {
 }
 
 class Student implements Comparable<Student>{
-    String name;
 
+   // private static int LAST_ID = 1000;
+    private static
+    String name;
     public Student(String name) {
         this.name = name;
     }
