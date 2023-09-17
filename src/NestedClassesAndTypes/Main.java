@@ -16,11 +16,15 @@ public class Main {
 
 //        var comparator = new EmployeeComparator<>();
 //        employees.sort(comparator);
-        //employees.sort(new Employee.EmployeeComparator<>("employeeid"));
+//        employees.sort(new Employee.EmployeeComparator<>("employeeid"));
         employees.sort(new Employee.EmployeeComparator<>("yearStarted").reversed());
 
         for (Employee employee : employees) {
             System.out.println(employee);
         }
+        System.out.println("Store members");
+        List<StoreEmployee> storeEmployees = new ArrayList<>(List.of(
+
+        ));
     }
 }
