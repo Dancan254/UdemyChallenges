@@ -12,6 +12,7 @@ public enum DaysOfTheWeek {
             //System.out.println(dd + " ");
             SwitchDayOfWeek(dd);
         }
+
         System.out.println(DaysOfTheWeek.FRIDAY + " is the " + DaysOfTheWeek.FRIDAY.ordinal() + "th day of the week");
 
     }

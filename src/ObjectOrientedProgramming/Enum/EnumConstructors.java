@@ -21,6 +21,8 @@ public enum EnumConstructors {
     public static void main(String[] args) {
 
         System.out.println("RGB of red: " + EnumConstructors.RED.getRGB());
+        System.out.println("RGB of blue: " + EnumConstructors.BLUE.getRGB());
+        System.out.println("RGB of green: " + EnumConstructors.GREEN.getRGB());
     }
 }
 
