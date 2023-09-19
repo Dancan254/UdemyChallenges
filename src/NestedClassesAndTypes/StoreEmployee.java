@@ -6,6 +6,9 @@ public class StoreEmployee extends Employee{
 
     private String store;
 
+    public StoreEmployee() {
+    }
+
     public StoreEmployee(int employeeId, String name, int yearStarted, String store) {
         super(employeeId, name, yearStarted);
         this.store = store;
