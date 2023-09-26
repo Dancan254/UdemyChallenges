@@ -1,6 +1,7 @@
 package Collections.ArrayLists;
 
 import java.util.ArrayList;
+import java.util.List;
 
 //create a record for grocery items
 record GroceryItem(String name, String type, int count){
@@ -15,7 +16,7 @@ record GroceryItem(String name, String type, int count){
 }
 public class Main {
     public static void main(String[] args) {
-        ArrayList<GroceryItem> groceryItems = new ArrayList<>();
+        List<GroceryItem> groceryItems = new ArrayList<>();
         groceryItems.add(new GroceryItem("Yoghurt"));
         groceryItems.add(new GroceryItem("Butter"));
         groceryItems.add(new GroceryItem("Oranges", "PRODUCE", 5));
@@ -29,6 +30,10 @@ public class Main {
         groceryItems.remove(2);
         System.out.println(groceryItems);
 
+        //iterating through the list
+        for (GroceryItem item: groceryItems){
+            System.out.println(item);
+        }
         //setting capacity
         ArrayList<Integer> numbers = new ArrayList<>(10);
         for (int i = 0; i < 7; i++) {
