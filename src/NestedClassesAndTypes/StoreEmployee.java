@@ -19,7 +19,7 @@ public class StoreEmployee extends Employee{
         return "%-8s%s".formatted(store, super.toString());
     }
 
-    public  class storeComparator <T extends StoreEmployee>
+    public class storeComparator <T extends StoreEmployee>
             implements Comparator<StoreEmployee> {
 
         @Override
